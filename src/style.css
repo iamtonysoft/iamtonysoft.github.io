@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Zilla+Slab:400,700');
+
+* {
+    font-family: 'Zilla Slab', serif;
+    font-weight: 400 !important;
+}
+
+body {
+    background-color: #dae3e7 !important;
+}
+
+.jumbotron {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.avatar {
+    height: 256px;
+    width: 256px;
+}
+
+.panel-1 {
+    background-color: #fff !important;
+}
+
+.introduction {
+    margin-top: 40px;
+    font-weight: 700 !important;
+    letter-spacing: 2px;
+}
+
+.sub-introduction {
+    margin-top: 30px;
+    line-height: 160%;
+}
+
+.email {
+    color: #E24324;
+}
+
+.highlight-link {
+    color: #E24324;
+    text-decoration: none !important;
+}
+
+.panel {
+    border-radius: 0 !important;
+}
+
+.caption {
+    margin-left: 20px;
+    font-weight: 700 !important;
+}
+
+.company-title {
+    margin-left: 20px;
+}
+
+
+/* MILESTONE */
+
+#work {
+    margin-top: 20px;
+    position: relative;
+    padding: 1em 0;
+    list-style: none;
+}
+
+#work:before {
+    width: 5px;
+    height: 100%;
+    position: absolute;
+    left: 25px;
+    top: 0;
+    content: ' ';
+    display: block;
+    /*background: linear-gradient(to bottom, #ffffff 0%,#ec7263 7%,#ec7263 89%,#ffffff 100%);*/
+    background:  linear-gradient(to bottom, #ffffff 0%,#ccc 7%,#ccc 89%,#ffffff 100%);
+}
+
+#work li {
+    width: 100%;
+    z-index: 2;
+    position: relative;
+    float: left;
+}
+
+#work .year {
+    width: 10%;
+    background: #fff;
+    padding: 10px;
+    font-size: 1em;
+    font-weight: 700 !important;
+    display: inline-block;
+    text-align: center;
+}
+
+@media (min-width: 1200px) {
+    #work .description {
+        width: 90%;
+    }
+}
+
+@media (min-width: 992px) {
+    #work .description {
+        width: 87%;
+    }
+}
+
+@media (min-width: 768px) {
+    #work .description {
+        width: 85%;
+    }
+}
+
+@media (min-width: 500px) {
+    #work .description {
+        width: 85%;
+    }
+}
+
+#work .description {
+    width: 80%;
+    display: inline-block;
+    background-color: #dae3e7 !important;
+    margin-bottom: 10px;
+    position: relative;
+    padding: 10px 10px 0 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#work .description h3 {
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+}
+
+#work .description p {
+    font-size: 1em;
+    margin-top: 5px;
+    padding: 0;
+}
+
+.box p {
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+#work .description:after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    right: 0;
+    left: -16px;
+    height: 0;
+    width: 0;
+    border: solid transparent;
+    border-right-color: #dae3e7;
+    border-width: 8px;
+    pointer-events: none;
+}
+
+.externalLink:link,
+.externalLink:visited,
+.externalLink:active {
+  color: #E24324;
+  text-decoration: none;
+}
+
+.externalLink:hover {
+  color: #aa13ce;
+}
