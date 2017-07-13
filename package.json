@@ -4,7 +4,8 @@
   "description": "personal website",
   "main": "index.js",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "start": "serve"
   },
   "repository": {
     "type": "git",
@@ -18,10 +19,15 @@
   "homepage": "https://github.com/webdevelopertony/webdevelopertony.github.io#readme",
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "jquery": "^3.2.1",
-    "lodash": "^4.17.4"
+    "jquery": "^3.2.1"
   },
   "devDependencies": {
-    "webpack": "^3.2.0"
+    "clean-webpack-plugin": "^0.1.16",
+    "css-loader": "^0.28.4",
+    "file-loader": "^0.11.2",
+    "serve": "^6.0.2",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.2.0",
+    "webpack-dev-server": "^2.5.1"
   }
 }
