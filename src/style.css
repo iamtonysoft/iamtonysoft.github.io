@@ -10,17 +10,39 @@ body {
     background-color: #dae3e7 !important;
 }
 
+
 .jumbotron {
+    margin-bottom: 0px;
+    color: white !important;
+    background:transparent !important;
     padding-top: 0 !important;
-    padding-bottom: 0 !important;
+    padding-bottom: 0 !important; 
 }
 
-.panel-1 {
-    background-color: #fff !important;
+.bg {
+    border-top: 5px solid #343838;
+    position: relative;
+    background: none;
+    border-bottom: 1px solid #e5e5e5;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7);
 }
+
+.bg:after {
+    content: "";
+    background-image: url("diagmonds.png");
+    opacity: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
 
 .introduction {
-    margin-top: 40px;
+    margin-top: 20px;
     font-family: 'Zilla Slab', serif;
     font-weight: 700 !important;
     letter-spacing: 2px;
@@ -28,12 +50,14 @@ body {
 
 .sub-introduction {
     font-family: 'Zilla Slab', serif;
-    margin-top: 30px;
+    font-size: 16px !important;
+    margin-top: 20px;
     line-height: 160%;
 }
 
 .email {
     color: #E24324;
+    text-decoration: none !important;
 }
 
 .highlight-link {
@@ -51,14 +75,13 @@ body {
 }
 
 .sub-caption {
+    font-weight: 600 !important;
     margin-left: 20px;
 }
 
 .company-title {
     margin-left: 20px;
 }
-
-
 /* MILESTONE */
 
 .work {
@@ -72,7 +95,7 @@ body {
     width: 5px;
     height: 100%;
     position: absolute;
-    left: 50px;
+    left: 30px;
     top: 0;
     content: ' ';
     display: block !important;
@@ -93,8 +116,6 @@ body {
     font-size: 1em;
     font-weight: 700 !important;
     display: inline-block;
-    text-align: center;
-    margin-left: 20px;
 }
 
 @media (min-width: 1200px) {
@@ -157,6 +178,7 @@ body {
     margin-left: 20px;
     color: #E24324;
     text-decoration: none;
+    font-weight: 600 !important;
 }
 
 .external-link:hover {
