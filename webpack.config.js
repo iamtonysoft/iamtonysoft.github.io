@@ -1,38 +1,40 @@
 const path = require('path');
 const webpack = require('webpack');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
     entry: {
-        app: './src/index.js',
-        vendor: ['bootstrap'],
+        app: './src/js/index.js',
     },
-    plugins: [
-        new CleanWebpackPlugin(['dist']),
-        new webpack.ProvidePlugin({
-            $: "jquery",
-            jQuery: "jquery"
-        })
-    ],
     output: {
-        filename: '[name].bundle.js',
+        filename: 'js/[name].bundle.js',
         path: path.resolve(__dirname, 'dist')
     },
     module: {
         rules: [
             {
-                test: /\.css$/, 
-                use: [
-                    'style-loader',
-                    'css-loader'
-                ]
+                test: /\.css$/,
+                use: ExtractTextPlugin.extract({
+                    fallback: "style-loader",
+                    use: "css-loader"
+                })
             },
             {
                 test: /\.(woff|woff2|eot|ttf|otf|svg)$/,
-                use: [
-                    'file-loader'
-                ]
+                loader: 'file-loader?name=fonts/[name].[ext]'
             }
         ]
-    }
+    },
+    plugins: [
+        new CleanWebpackPlugin(['dist']),
+        new ExtractTextPlugin("css/style.css"),
+        new webpack.ProvidePlugin({
+            $: "jquery",
+            jQuery: "jquery"
+        }),
+        new webpack.optimize.CommonsChunkPlugin({
+            name: 'common' // Specify the common bundle's name.
+        })
+    ],
 };
