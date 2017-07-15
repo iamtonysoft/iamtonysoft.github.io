@@ -94,6 +94,7 @@ body {
 }
 
 .caption {
+    margin-top: 10px;
     margin-left: 20px;
     font-weight: 800 !important;
 }
