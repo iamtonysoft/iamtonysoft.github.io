@@ -39,6 +39,13 @@ body {
     z-index: -1;
 }
 
+.avatar {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 240px;
+    width: 240px;
+}
+
 .introduction {
     margin-top: 5%;
     font-family: 'Zilla Slab', serif;
