@@ -1,21 +1,38 @@
-@import url('https://fonts.googleapis.com/css?family=Zilla+Slab:400,700');
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+@import 'https://fonts.googleapis.com/css?family=Raleway:400,600,800';
 
 * {
-    font-family: 'Lato', sans-serif;
-    font-weight: 400 !important;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    text-shadow: rgba(0,0,0,.01) 0 0 1px;
 }
 
 body {
-    background-color: #dae3e7 !important;
+    background-color: #dae3e7 !important; 
+}
+
+.btn-outline {
+    background-color: transparent !important;
+    color: inherit !important;
+    transition: all .5s !important;
+    text-shadow: 1px 1px 1px #000 !important;
+}
+
+.btn-outline:hover {
+    background-color: #d43f3a !important;
+}
+
+.btn {
+    border-radius: 0px !important;
+}
+
+.dl-resume {
+    margin-top: 75px;
+    margin-bottom: 50px;
 }
 
 .jumbotron {
-    margin-bottom: 0px;
-    color: white !important;
-    background:transparent !important;
     padding-top: 0 !important;
-    padding-bottom: 0 !important; 
+    padding-bottom: 0 !important;
 }
 
 .bg {
@@ -23,14 +40,17 @@ body {
     position: relative;
     background: none;
     border-bottom: 1px solid #e5e5e5;
-    color: #fff;
-    background: rgba(0, 0, 0, 0.7);
+    color: #fff !important;
+    z-index: 0;
 }
 
 .bg:after {
     content: "";
-    background-image: url('../img/diagmonds.png');
-    opacity: 1;
+    background-image: url('../img/digi-art.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    opacity: 0.9;
     top: 0;
     left: 0;
     bottom: 0;
@@ -42,20 +62,19 @@ body {
 .avatar {
     margin-top: 5%;
     margin-bottom: 5%;
-    height: 240px;
-    width: 240px;
+    height: 180px;
+    width: 180px;
 }
 
 .introduction {
-    margin-top: 5%;
-    font-family: 'Zilla Slab', serif;
-    font-weight: 700 !important;
-    letter-spacing: 2px;
+    margin-top: 10%;
+    font-size: 20px !important;
+    font-weight: 800 !important;
+    letter-spacing: 1.3px;
 }
 
 .sub-introduction {
-    font-family: 'Zilla Slab', serif;
-    font-size: 16px !important;
+    font-size: 14px !important;
     margin-top: 20px;
     line-height: 160%;
 }
@@ -76,11 +95,11 @@ body {
 
 .caption {
     margin-left: 20px;
-    font-weight: 700 !important;
+    font-weight: 800 !important;
 }
 
 .sub-caption {
-    font-weight: 600 !important;
+    font-weight: 400 !important;
     margin-left: 20px;
 }
 
@@ -119,7 +138,7 @@ body {
     background: #fff;
     padding: 10px;
     font-size: 1em;
-    font-weight: 700 !important;
+    font-weight: 600 !important;
     display: inline-block;
 }
 

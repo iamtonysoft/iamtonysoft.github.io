@@ -28,7 +28,7 @@ module.exports = {
             },
             {
                 test: /\.(woff|woff2|eot|ttf|otf|svg)$/,
-                loader: 'file-loader?name=fonts/[name].[ext]'
+                loader: 'url-loader'
             },
             {
                 test: /\.js$/, 
