@@ -28,7 +28,11 @@ module.exports = {
             },
             {
                 test: /\.(woff|woff2|eot|ttf|otf|svg)$/,
-                loader: 'file-loader?name=fonts/[name].[ext]'
+                loader: 'url-loader',
+                options: {
+                    limit: 8192
+                }
+                //loader: 'file-loader?name=fonts/[name].[ext]'
             },
             {
                 test: /\.js$/, 
@@ -37,7 +41,7 @@ module.exports = {
             },
             {
                 test: /\.(jpe?g|png|gif)$/i,
-                loader: 'url-loader?name=img/[name].[ext]'
+                loader: 'url-loader'
             } 
         ]
     },
