@@ -28,11 +28,7 @@ module.exports = {
             },
             {
                 test: /\.(woff|woff2|eot|ttf|otf|svg)$/,
-                loader: 'url-loader',
-                options: {
-                    limit: 8192
-                }
-                //loader: 'file-loader?name=fonts/[name].[ext]'
+                loader: 'file-loader?name=fonts/[name].[ext]'
             },
             {
                 test: /\.js$/, 
