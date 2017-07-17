@@ -39,9 +39,10 @@ body {
     border-top: 5px solid #343838;
     position: relative;
     background: none;
-    border-bottom: 1px solid #e5e5e5;
+    /* border-bottom: 1px solid #e5e5e5; */
     color: #fff !important;
     z-index: 0;
+    margin-bottom: 0 !important;
 }
 
 .bg:after {
@@ -57,6 +58,13 @@ body {
     right: 0;
     position: absolute;
     z-index: -1;
+}
+
+.blog-container {
+    background-color: #343838 !important;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e5e5e5;
+    color: #fff;
 }
 
 .avatar {
@@ -211,3 +219,16 @@ body {
 .external-link:hover {
     color: #aa13ce;
 }
+
+.blog-link:link,
+.blog-link:visited,
+.blog-link:active {
+    color: #E24324;
+    text-decoration: none;
+    font-weight: 600 !important;
+}
+
+.blog-link:hover {
+    color: #aa13ce;
+}
+
