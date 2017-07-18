@@ -65,7 +65,8 @@ body {
     margin-bottom: 20px;
     border-bottom: 1px solid #e5e5e5;
     color: #fff;
-    margin: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
 }
 
 .avatar {
