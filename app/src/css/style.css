@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,800');
+
+* {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+#intro {
+    letter-spacing: 3px !important;
+}
+
+#intro, #intro h1, #quotation p, #quotation footer {
+    color: #fff !important;
+    text-shadow: 0 0 1px #000;
+} 
+
+.text-orange {
+    color: orange !important;
+}
+
+#about > div > div > div > blockquote {
+    padding-top: 15% !important;
+}

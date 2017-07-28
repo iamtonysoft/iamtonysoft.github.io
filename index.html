@@ -1,179 +1,206 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Tonysoft</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="dist/css/style.css">
-  </head>
-  <body>
-    <!-- HEADER -->
-    <div class="jumbotron bg">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-2 col-sm-12">
-            <img src="src/img/tony2.jpg" class="avatar img-responsive img-circle center-block"/>
-          </div>
-          <div class="col-md-5 col-sm-12">
-            <p class="introduction text-center">
-              ANTHONY CORTEZ <br>
-              <span class="sub-introduction">Software Engineer | Information Systems Specialist</span> <br>
-            </p>
-            <!-- Place this tag where you want the button to render. -->
-            <div class="text-center">
-              <iframe src="https://www.facebook.com/plugins/follow?href=https%3A%2F%2Fwww.facebook.com%2Fiamtonysoft&amp;layout=button&amp;show_faces=true&amp;colorscheme=light&amp;width=450&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:63px; height:20px;" allowTransparency="true"></iframe>
-              <iframe src="https://ghbtns.com/github-btn.html?user=iamtonysoft&type=follow&count=false" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Tonysoft</title>
+        <link rel="stylesheet" href="app/dist/css/app.bundle.css">
+    </head>
+    <body id="top">
+    
+        <div class="uk-offcanvas-content">
+
+            <!-- The whole page content goes here -->
+
+             <!-- NAVBAR -->
+            <div class="uk-hidden@m">
+                <nav class="uk-navbar uk-navbar-container uk-margin uk-margin-remove-bottom" uk-navbar uk-sticky>
+                    <!-- <div class="uk-navbar-center">
+                        <a class="uk-navbar-item uk-logo" href="#top" uk-scroll>I AM TONY</a> 
+                    </div> -->
+                    <div class="uk-navbar-right">
+                        <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#offcanvas-usage" uk-toggle></a>
+                    </div> 
+                </nav>
+            </div>
+            <div class="uk-visible@m">
+                <nav class="uk-navbar uk-navbar-container uk-margin uk-margin-remove-bottom" uk-navbar uk-sticky>
+                    <div class="uk-navbar-center">
+                        <div class="uk-navbar-center-left">
+                            <div>
+                                <ul class="uk-navbar-nav">
+                                    <li><a href="#about" uk-scroll>About</a></li>
+                                    <li><a href="#experience" uk-scroll>Experience</a></li>
+                                    <li><a href="#skills" uk-scroll>Skills</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a class="uk-navbar-item uk-logo" href="#top" uk-scroll>TONYSOFT</a>
+                        <div class="uk-navbar-center-right">
+                            <div>
+                                <ul class="uk-navbar-nav">
+                                    <li><a href="#certification" uk-scroll>Certification</a></li>
+                                    <li><a href="https://iamtonysoft.github.io/blog/" target="_blank">Blog</a></li>
+                                    <li><a href="app/src/file/AnthonyCortez.pdf" target="_blank">Résumé</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
             </div>
             
-          </div>
-          <div class="col-md-offset-1 col-md-4">
-            <div class="dl-resume text-center">
-              <a href="src/docs/AnthonyCortez.pdf" target="_blank" class="btn btn-default btn-outline">
-                <span class="glyphicon glyphicon-download"></span> DOWNLOAD RESUME
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row blog-container">
-      <div class="col-md-12">
-        <div class="container">
-          <h4>My blog is up and running. Please visit 
-            <a class="blog-link" href="https://iamtonysoft.github.io/blog/">tonysoft</a>
-            to learn more about technical stuff.
-          </h4>
-        </div>
-      </div>
-    </div>
-    <!-- BODY -->
-    <div class="container">
-      <div class="row">
-        <!-- LEFT COLUMN -->
-        <div class="col-md-8">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="panel panel-default">
-                <div class="panel-body">
-                  <h3 class="caption">WORK EXPERIENCE</h4>
-                  <hr>
-                  <h4 class="caption text-muted">Information Systems Specialist <br>FDC Utilities, Inc. (August 2016 - December 2016)</h4>
-                  
-                  <ul class="work clearfix">
-                    <li>
-                      <div class="year pull-left">August 2016</div>
-                      <div class="description pull-right">
-                        <h4 class="caption">Energy Trading and Risk Management System</h3>
-                          <div class="row">
-                            <div class="col-md-12">
-                              <p class="sub-caption">Role: Inhouse Developer</p>
-                              <p class="sub-caption">Responsibilities: <br>Design an entity relationship diagram and database structure and developed an API with the front-end application</p>
-                              <p class="sub-caption">Technology Used: [ ASP.NET, Bootstrap, jQuery, MSSQL, MS Power BI ]</p>
-                            </div>
-                          </div>  
-                      </div>
-                    </li>
-                  </ul>
 
-                  <h4 class="caption text-muted">Software Engineer <br>MobileGroup, Inc. (July 2014 - August 2016)</h4>
-                  
-                  <ul class="work clearfix">
-                    <li>
-                      <div class="year pull-left">August 2016</div>
-                      <div class="description pull-right">
-                        <h4 class="caption">Robinsons Movieworld</h3>
-                          <div class="row">
-                            <div class="col-md-12">
-                              <p class="sub-caption">Lead Developer of Cinema Website</p>
-                              <p class="sub-caption">Responsibilities: <br>Implement the given layout, design the online cinema ticketing and integrate MIGs and PayMaya as payment gateway.</p>
-                              <p class="sub-caption">Technology Used: [ ASP.NET, Bootstrap, jQuery, MSSQL ]</p>
-                              <a class="external-link" href="http://robinsonsmovieworld.com/" target="_blank"><i class="glyphicon glyphicon-link" aria-hidden="true"></i> Visit the website</a>
+            <!-- INTRO -->
+            <div class="uk-background-norepeat uk-background-fixed uk-background-cover uk-section uk-padding-remove-vertical uk-flex uk-flex-middle" 
+                uk-height-viewport="offset-top: true" style="background-image: url(app/src/img/dreaming.jpg);">
+                <div class="uk-container">
+                    <div class="uk-grid uk-child-width-1-1@m" uk-grid>
+                        <div id="intro" class="uk-text-center" uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
+                            <h1 class="uk-margin-remove-bottom uk-heading-hero">I AM TONY</h1>
+                            <p class="uk-margin-remove-top">Software Engineer | Information Systems Specialist</p>
+                            <blockquote id="quotation" cite="#">
+                                <p class="uk-margin-small-bottom">"Hardwork betrays none, but dreams betray many"</p>
+                                <footer>Hikigaya Hachiman</footer>
+                            </blockquote> 
+                            <div class="uk-inline">
+                                <a href="https://github.com/iamtonysoft" class="uk-icon-button uk-margin-small-right" uk-icon="icon: github"></a>
+                                <a href="https://www.facebook.com/iamtonysoft" class="uk-icon-button  uk-margin-small-right" uk-icon="icon: facebook"></a>
+                                <a href="https://www.instagram.com/tonysoft/" class="uk-icon-button" uk-icon="icon: instagram"></a>
                             </div>
-                          </div>  
-                      </div>
-                    </li>
-                    <li>
-                      <div class="year pull-left">July 2016</div>
-                      <div class="description pull-right">
-                        <h4 class="caption">Limketkai Cinemas</h3>
-                          <div class="row">
-                            <div class="col-md-12">
-                              <p class="sub-caption">Lead Developer of Cinema Website</p>
-                              <p class="sub-caption">Responsibilities: <br>Implement the given layout, design the online cinema ticketing plus developed the API for this ticketing and integrate IPAY88 as payment gateway.</p>
-                              <p class="sub-caption">Technology Used: [ ASP.NET, Bootstrap, jQuery, MSSQL ]</p>
-                              <a class="external-link" href="http://limketkaicinemas.com/" target="_blank"><i class="glyphicon glyphicon-link" aria-hidden="true"></i> Visit the website</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ABOUT -->
+            <div id="about" class="uk-section uk-padding-remove-vertical uk-flex uk-flex-middle" uk-height-viewport="offset-top: true">
+                <div class="uk-container">
+                    <div class="uk-grid uk-child-width-1-2@m" uk-grid>
+                        <div class="uk-text-center uk-text-center@s" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+                            <img src="app/src/img/avatar-3.jpg" alt>
+                            <h1 class="uk-heading-line uk-text-center"><span>About Me</span></h1>
+                        </div>
+                        <div class="uk-margin-remove" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+                            <blockquote cite="#">
+                                <p class="uk-text-center uk-text-center@s uk-padding-small">
+                                    "I am a Software Engineer / Information Systems Specialist based on Philippines. 
+                                    I am fascinated about technology that is why I always challenge myself to improve and 
+                                    create different types of applications for the end users."
+                                </p>
+                            </blockquote> 
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EXPERIENCE -->
+            <div id="experience" class="uk-section uk-section-secondary uk-padding-remove-vertical uk-flex uk-flex-middle" uk-height-viewport="offset-top: true">
+                
+                <div class="uk-container" uk-scrollspy="cls: uk-animation-fade; repeat: true">
+                    <h3 class="uk-text-center uk-text-center@s uk-padding-large uk-heading-line"><span>WORK EXPERIENCE</span></h3>
+                    <div class="uk-grid-match uk-child-width-1-2@m" uk-grid>
+                        <div class="uk-text-center uk-text-center@s">
+                            <h3 class="uk-margin-remove">Software Engineer</h3>
+                            <p class="uk-margin-remove">MobileGroup, Inc. (July 2014 - August 2016)</p>
+                            <p>Projects: 
+                                <a class="text-orange" href="http://robinsonsmovieworld.com/" target="_blank">Robinsons Movieworld</a>,  
+                                <a class="text-orange" href="http://limketkaicinemas.com/" target="_blank">Limketkai Cinemas</a>, 
+                                <a class="text-orange" href="http://fisherboxoffice.fishermall.com.ph/" target="_blank">FisherBoxOffice Fishermall</a>, 
+                                <a class="text-orange" href="https://smtickets.com/" target="_blank">SM Tickets</a>
+                            </p>
+                            <p>Responsibilities: Lead and Support an Online Ticketing Website, Develop an applications using CodeIgniter and ASP.NET</p>
+                        </div>
+                        <div class="uk-text-center uk-text-center@s">
+                            <h3 class="uk-margin-remove">Information Systems Specialist</h3>
+                            <p class="uk-margin-remove">FDC Utilities, Inc. (August 2016 - December 2016)</p>
+                            <p>Project: Energy Trading and Risk Management</p>
+                            <p>Responsibilities: Data Gathering, Design an Entity Relationship Diagram and Database Structure, Developed an API with the Front-End Application</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SKILLS -->
+            <div id="skills" class="uk-section uk-padding-remove-vertical uk-flex uk-flex-middle" uk-height-viewport="offset-top: true">
+                <div class="uk-container">
+                    <h3 class="uk-text-center uk-text-center@s uk-padding-large uk-heading-line"><span>PROGRAMMING SKILLS</span></h3>
+                    <div class="uk-grid uk-child-width-1-1@m" uk-grid>
+                        <div uk-lightbox="animation: scale">
+                            <a href="app/src/img/skills.png" caption="Skill That I Learned Through Experience"><img src="app/src/img/skills.png" alt></a>
+                        </div>
+                    </div>
+               </div>
+            </div>
+            
+            <!-- CERTIFICATION -->
+            <div id="certification" class="uk-section uk-section-secondary uk-light uk-padding-remove-vertical uk-flex uk-flex-middle" uk-height-viewport="offset-top: true">
+                <div class="uk-container" uk-scrollspy="cls: uk-animation-scale-up; repeat: true">
+                    <h3 class="uk-padding-large uk-heading-line"><span>MICROSOFT VIRTUAL ACADEMY CERTIFICATION</span></h3>
+                    <div class="uk-grid uk-child-width-1-3@m" uk-grid>
+                        <div class="uk-text-center uk-text-center@s">
+                            <a href="app/src/file/MVA-1.pdf" target="_blank"><img src="app/src/img/pdf.png" alt=""></a>
+                            <h3>Web API Design Jump Start</h3>
+                        </div>
+                        <div class="uk-text-center uk-text-center@s">
+                            <a href="app/src/file/MVA-2.pdf" target="_blank"><img src="app/src/img/pdf.png" alt=""></a>
+                            <h3>Implementing Entity Framework with MVC</h3>
+                        </div>
+                        <div class="uk-text-center uk-text-center@s">
+                            <a href="app/src/file/MVA-3.pdf" target="_blank"><img src="app/src/img/pdf.png" alt=""></a>
+                            <h3>JavaScript for Experienced Developers</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FOOTER -->
+            <div class="uk-section-secondary uk-section uk-padding-remove-vertical">
+                <div class="uk-margin-remove-vertical uk-grid uk-grid-stack" uk-grid>
+                    <div class="uk-width-1-1@m uk-first-column">
+                        <hr class="uk-hr">
+                    </div>
+                </div>
+            </div>
+            <div class="uk-section-secondary uk-section uk-section-xsmall">
+                <div class="uk-container">
+                    <div class="uk-flex-middle uk-margin-remove-vertical uk-grid">
+                        <div class="uk-width-expand@s uk-first-column">
+                            <div class="uk-margin uk-text-left@s uk-text-center uk-text-muted uk-text-small">
+                                Made by Anthony Cortez. All rights Reserved.
                             </div>
-                          </div>  
-                      </div>
-                    </li>
-                    <li>
-                      <div class="year pull-left">January 2015</div>
-                      <div class="description pull-right">
-                        <h4 class="caption">FisherBoxOffice Fishermall</h3>
-                          <div class="row">
-                            <div class="col-md-12">
-                              <p class="sub-caption">Lead Developer of Cinema Website</p>
-                              <p class="sub-caption">Responsibilities: <br>Design and Implement the layout, Creates an API structure for PHP and Integrate the IPAY88 as payment gateway.</p>
-                              <p class="sub-caption">Technology Used: [ PHP, CodeIgniter, Bootstrap, jQuery, MSSQL ]</p>
-                              <a class="external-link" href="http://fisherboxoffice.fishermall.com.ph/" target="_blank"><i class="glyphicon glyphicon-link" aria-hidden="true"></i> Visit the website</a>
+                        </div>
+                        <div class="uk-width-expand@s">
+                            <div class="uk-margin uk-text-right@s uk-text-center">
+                                <a href="#" uk-totop></a>
                             </div>
-                          </div>  
-                      </div>
-                    </li>
-                    <li>
-                      <div class="year pull-left">July 2014</div>
-                      <div class="description pull-right">
-                        <h4 class="caption">SM Tickets</h3>
-                          <div class="row">
-                            <div class="col-md-12">
-                              <p class="sub-caption">Support Developer of Event Ticketing Website</p>
-                              <p class="sub-caption">Responsibilities: <br>Create and Utilize the API Functions.</p>
-                              <p class="sub-caption">Technology Used: [ PHP, CodeIgniter, MySQL, JQuery ]</p>
-                              <a class="external-link" href="https://smtickets.com/" target="_blank"><i class="glyphicon glyphicon-link" aria-hidden="true"></i> Visit the website</a>
-                            </div>
-                          </div>  
-                      </div>
-                    </li>
-                  </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="offcanvas-usage" uk-offcanvas="flip: true; overlay: true">
+                <div class="uk-offcanvas-bar">
+
+                    <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+                    <h3>MENU</h3>
+
+                    <ul class="uk-list uk-list-divider">
+                        <li><a href="#top">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#certification">Certification</a></li>
+                        <li><a href="https://iamtonysoft.github.io/blog/" target="_blank">Blog</a></li>
+                        <li><a href="app/src/file/AnthonyCortez.pdf" target="_blank">Résumé</a></li>
+                    </ul>
 
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-        <!-- RIGHT COLUMN -->
-        <div class="col-md-4">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="panel panel-default">
-                <div class="panel-body">
-                  <h3 class="caption">PROGRAMMING SKILLS</h3>
-                  <hr>
-                  <a href="src/docs/Software_Engineer.pdf" target="_blank"><img src="src/img/Software_Engineer.png" class="img-responsive"/></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12">
-              <div class="panel panel-default">
-                <div class="panel-body">
-                  <h3 class="caption">MVA CERTIFICATION</h3>
-                  <hr>
-                  <ul class="list-unstyled">
-                    <li><a class="external-link" href="src/docs/MVA-1.pdf" target="_blank"><i class="glyphicon glyphicon-link" aria-hidden="true"></i> Web API Design Jump Start</a></li>
-                    <li><a class="external-link" href="src/docs/MVA-2.pdf" target="_blank"><i class="glyphicon glyphicon-link" aria-hidden="true"></i> Implementing Entity Framework with MVC</a></li>
-                    <li><a class="external-link" href="src/docs/MVA-3.pdf" target="_blank"><i class="glyphicon glyphicon-link" aria-hidden="true"></i> JavaScript for Experienced Developers</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <script src="dist/js/common.bundle.js"></script>
-    <script src="dist/js/app.bundle.js"></script>
-  </body>
+        </div>
+    <script src="app/dist/js/common.bundle.js"></script>    
+    <script src="app/dist/js/app.bundle.js"></script>
+    </body>
 </html>

@@ -1,4 +1,4 @@
-const path = require('path');
+var path = require('path');
 const webpack = require('webpack');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
@@ -8,14 +8,14 @@ var inProduction = (process.env.NODE_ENV === 'production');
 module.exports = {
     entry: {
         app: [
-            './src/js/index.js',
-            './src/css/main.css',
-            'bootstrap/dist/css/bootstrap.css'
-        ],
+            './app/src/js/index.js',
+            'uikit/dist/css/uikit.css',
+            './app/src/css/style.css'
+        ]
     },
     output: {
         filename: 'js/[name].bundle.js',
-        path: path.resolve(__dirname, 'dist')
+        path: path.resolve(__dirname, 'app/dist')
     },
     module: {
         rules: [
@@ -31,20 +31,20 @@ module.exports = {
                 loader: 'url-loader'
             },
             {
+                test: /\.(jpe?g|png|gif)$/i,
+                loader: 'url-loader'
+            },
+            {
                 test: /\.js$/, 
                 exclude: /node_modules/, 
                 loader: "babel-loader"
-            },
-            {
-                test: /\.(jpe?g|png|gif)$/i,
-                loader: 'url-loader'
-            } 
+            }
         ]
     },
     plugins: [
-        new CleanWebpackPlugin(['dist']),
-        
-        new ExtractTextPlugin("css/style.css"),
+        new CleanWebpackPlugin(['app/dist']),
+
+        new ExtractTextPlugin("css/[name].bundle.css"),
 
         new webpack.LoaderOptionsPlugin({
             minimize: inProduction
@@ -58,10 +58,8 @@ module.exports = {
         new webpack.optimize.CommonsChunkPlugin({
             name: 'common' // Specify the common bundle's name.
         })
-    ],
-
+    ]
 };
-
 
 if(inProduction) {
     module.exports.plugins.push(
