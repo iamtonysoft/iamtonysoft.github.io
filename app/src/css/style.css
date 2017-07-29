@@ -20,3 +20,11 @@
 #about > div > div > div > blockquote {
     padding-top: 15% !important;
 }
+
+.uk-offcanvas-bar {
+    width: 100% !important;
+}
+
+#menu-list li {
+    padding: 10px 0;
+}
