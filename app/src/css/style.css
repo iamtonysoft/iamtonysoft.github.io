@@ -5,13 +5,19 @@
     font-family: 'Montserrat', sans-serif !important;
 }
 
+.uk-border-circle {
+    height: 100px;
+    width: 100px !important;
+}
+
 #intro {
     letter-spacing: 3px !important;
 }
 
 #intro, #intro h1, #quotation p, #quotation footer {
+    font-family: 'Montserrat', sans-serif !important;
     color: #fff !important;
-    text-shadow: 0 0 1px #000;
+    text-shadow: 0 0 5px #000;
 } 
 
 .text-orange {
